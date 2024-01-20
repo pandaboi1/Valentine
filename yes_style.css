@@ -2,8 +2,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #3478e7;
+    height: 75vh;
+    background-color: #6990e4;
 }
 
 .header_text {
@@ -12,7 +12,7 @@ body {
     font-weight: bold;
     color: white;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 25px;
     margin-bottom: 0px;
 }
 
@@ -20,4 +20,24 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#more {
+    position: absolute;
+    border-style: solid;
+    border-width: thin;
+    border-color: rgb(17, 17, 17);
+}
+
+.btn {
+    background-color: #512c92;
+    color: white;
+    padding: 10px 16px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
 }
