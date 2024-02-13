@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="./spaceinvaderstyle.css"> 
+</head>
+
+<div id="scorebin">
+    <p>
+        <span><br>Score: </span><span id="scoreEl">0</span>
+    </p>    
+    <canvas></canvas>
+</div>
+
+<div id="buttonContainer" class="btn" onclick="nextPage()">
+    <script>
+        function nextPage() {
+            window.location.href = "game_over.html";
+        }
+    </script>
+</div>
+
+
+<script src="./spaceinvadercontroller.js"></script>

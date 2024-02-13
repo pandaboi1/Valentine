@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #151515;
+}
+p{
+    position: absolute; 
+    z-index: index 10; 
+    color:white; 
+    left: 10px; 
+    top: 10px; 
+    margin: 0; 
+    font-family: sans-serif; 
+    font-size: 14px;
+}
+#scorebin{
+    position: relative;
+}
+#buttonContainer{    
+    position: absolute;
+    border-style: solid;
+    border-width: thin;
+    border-color: rgb(17, 17, 17);
+    transition: 0.5s;
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+}
