@@ -1,6 +1,12 @@
 ![image](https://github.com/pandaboi1/Valentine-s/assets/72881312/a840c5b2-341e-4ab3-a47d-bf2bb5371c5e)
+
+
+# Cloned repo [https://github.com/byquangthanh/valentine.github.io](https://github.com/byquangthanh/valentine.github.io)
+## Please take a look at it, they did an amazing job! 
+NOT my original idea, but had the creative liberty to change it as I wish, hope I did them justice.
+
 ---
-# Will You Be My Valentine?
+# Valentine
 - Welcome to the "Valentine" project, a creative way to ask out your Valentine. With the inclusion of a supplementary mini-game designed to actively involve your partner in the conversation, participants are encouraged to compete for the highest score of 21424 (Valentine's Day), enhancing the Valentine's Day experience.
 ---
 ### Overview
