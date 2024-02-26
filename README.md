@@ -1,10 +1,10 @@
 ![image](https://github.com/pandaboi1/Valentine-s/assets/72881312/a840c5b2-341e-4ab3-a47d-bf2bb5371c5e)
 ---
 # Will You Be My Valentine?
-Welcome to the "Valentine" project, a creative way to ask out your Valentine. With the inclusion of a supplementary mini-game designed to actively involve your partner in the conversation, participants are encouraged to compete for the highest score of 21424, enhancing the Valentine's Day experience.
+- Welcome to the "Valentine" project, a creative way to ask out your Valentine. With the inclusion of a supplementary mini-game designed to actively involve your partner in the conversation, participants are encouraged to compete for the highest score of 21424 (Valentine's Day), enhancing the Valentine's Day experience.
 ---
 ### Overview
-"Valentine" is a web-based application that presents users with the question "Will you be my valentine?" followed by two options: "Yes" and "No". What makes this project special is the interactive and engaging way it handles responses, especially if someone tries to click "No". With the inclusion of a supplementary mini-game designed to amuse your partner upon their affirmative response.
+- "Valentine" is a web-based application that presents users with the question "Will you be my valentine?" followed by two options: "Yes" and "No". What makes this project special is the interactive and engaging way it handles responses, especially if someone tries to click "No". With the inclusion of a supplementary mini-game designed to amuse your partner upon their affirmative response.
 ---
 ### Features
 - **Interactive Question**: Interactive Valentine's Day proposal dynamic.
@@ -23,7 +23,7 @@ To experience "Valentine":
 2. <b>Clone</b> Your newly created repository to local machine.
 3. Open with <b>VScode</b> if it's on your local machine, or use <b>Github codespaces</b> to <b>edit</b> the site as you wish.
 4. <b>Commit</b> changes with detailed description and <b>push</b> to your forked repository.
-5. Go to ![https://render.com](https://render.com) and make an accout. (Preferablely use gitHub)
+5. Go to [https://render.com](https://render.com) and make an accout. (Preferablely use gitHub)
 6. Click "New" on the top right hand side.
 7. Click "static site".
 8. Choose the forked repository.
