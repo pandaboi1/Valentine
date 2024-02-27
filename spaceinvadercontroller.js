@@ -347,24 +347,40 @@ function animate() {
          }, 0) 
       } else invaderProjectile.update()
 
+      
+      if (score >= 10){
+         console.log('you win')
+         WinButton(); // Check on page load
+         retryButton();
+
+         setTimeout(() => {
+            invaderProjectiles.splice(index, 1)
+            player.opacity = 0
+            game.over = true  // Simulated change of boolean (you can replace this with your actual method of changing the boolean)
+         }, 0)
+
+         
+         setTimeout(() => {
+            game.active = false
+         }, 0)
+      }
       // projectile 
       if (invaderProjectile.position.y + invaderProjectile.height >= player.position.y 
          && invaderProjectile.position.x + invaderProjectile.width >= player.position.x 
          && invaderProjectile.position.x <= player.position.x + player.width) {
-
-         console.log('you lose')
          
+         console.log('you lose')
+         GameOverButton(); // Check on page load
+
          setTimeout(() => {
             invaderProjectiles.splice(index, 1)
             player.opacity = 0
-            game.over = true
-            createButton(); // Check on page load
-      // Simulated change of boolean (you can replace this with your actual method of changing the boolean)
+            game.over = true  // Simulated change of boolean (you can replace this with your actual method of changing the boolean)
          }, 0)
 
          setTimeout(() => {
             game.active = false
-         }, 2000)
+         }, 0)
          
          createParticles({
             object: player, 
@@ -416,7 +432,7 @@ function animate() {
                      
                      // remove invader and projectile
                      if (invaderFound && projectileFound) {
-                        score += 100
+                        score += 103
                         console.log(score)
                         scoreEl.innerHTML = score
 
@@ -450,10 +466,7 @@ function animate() {
    if (keys.a.pressed && player.position.x >= 0) {
       player.velocity.x = -7
       player.rotation = -0.15
-   } else if (
-      keys.d.pressed && 
-      player.position.x + player.width <= canvas.width
-   ) {
+   } else if ( keys.d.pressed && player.position.x + player.width <= canvas.width ) {
       player.velocity.x = 7
       player.rotation = 0.15
    } else {
@@ -474,22 +487,57 @@ function animate() {
 
 animate()
 
-function createButton() {
-   const buttonContainer = document.getElementById('buttonContainer');
+function retryButton() {
+   const retryButton = document.getElementById('retryButton');
    const button = document.createElement('button');
-   button.style.backgroundColor = '#512c92';
+   button.style.backgroundColor = '#DC143C';
    button.style.color = 'white';
    button.style.border = 'none';
-   button.style.padding = '15px 32px'
+   button.style.padding = '10px 10px'
    button.style.cursor = 'pointer';
    button.style.textAlign = 'center';
+   button.style.fontSize = '25px';
    button.style.display = 'inline-block';
-   button.style.margin = '4px 2px';
    button.style.borderRadius = '12px';
 
-   button.textContent = "Game over!\n Click me to continue";
-   buttonContainer.appendChild(button);
+   button.textContent = "Retry?";
+   retryButton.appendChild(button);
    
+}
+
+function WinButton() {
+   const buttonContainer = document.getElementById('buttonContainer');
+   const button = document.createElement('button');
+   button.style.backgroundColor = '#6495ED';
+   button.style.color = 'white';
+   button.style.border = 'none';
+   button.style.padding = '10px 10px'
+   button.style.cursor = 'pointer';
+   button.style.textAlign = 'center';
+   button.style.fontSize = '25px';
+   button.style.display = 'inline-block';
+   button.style.borderRadius = '12px';
+
+   button.textContent = "You Win!\n Continue?";
+   buttonContainer.appendChild(button);
+}
+
+function GameOverButton() {
+   const buttonContainer = document.getElementById('buttonContainer');
+   const button = document.createElement('button');
+   button.style.backgroundColor = '#6495ED';
+   button.style.color = 'white';
+   button.style.border = 'none';
+   button.style.padding = '10px 10px';
+   button.style.cursor = 'pointer';
+   button.style.textAlign = 'center';
+   button.style.fontSize = '25px';
+   button.style.display = 'inline-block';
+   button.style.borderRadius = '12px';
+
+   button.textContent = "Game over! Continue?";
+   buttonContainer.appendChild(button);
+   retryButton();
 }
 
 

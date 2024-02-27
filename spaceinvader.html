@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <head>
+    <title>Space Invader</title>
     <link rel="stylesheet" href="./spaceinvaderstyle.css"> 
 </head>
 
 <div id="scorebin">
-    <p>
+    <p id="borderBin">
         <span><br>Score: </span><span id="scoreEl">0</span>
+        <span><br>High Score Goal: 21,424</span>
     </p>    
     <canvas></canvas>
 </div>
+
 
 <div id="buttonContainer" class="btn" onclick="nextPage()">
     <script>
@@ -18,5 +21,14 @@
     </script>
 </div>
 
+
+
+<div id="retryButton" class="btn" onclick="nextPage()">
+    <script>
+        function nextPage() {
+            window.location.href = "spaceinvader.html";
+        }
+    </script>
+</div>
 
 <script src="./spaceinvadercontroller.js"></script>

@@ -18,13 +18,32 @@ p{
 #scorebin{
     position: relative;
 }
+#borderBin{
+    background-color: #151515;
+    border: white; 
+    border-width: thin; 
+    border-style:solid; 
+    padding-right: 15px; 
+    padding-left: 15px; 
+    padding-bottom: 15px;
+}
 #buttonContainer{    
     position: absolute;
     border-style: solid;
     border-width: thin;
     border-color: rgb(17, 17, 17);
     transition: 0.5s;
+    margin-bottom: 7.5%;
 }
+#retryButton{
+    position: absolute;
+    border-style: solid;
+    border-width: thin;
+    border-color: rgb(17, 17, 17);
+    transition: 0.5s;
+    margin-top: 7.5%;
+}
+
 .buttons {
     display: flex;
     flex-direction: row;
